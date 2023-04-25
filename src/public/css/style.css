@@ -25,7 +25,7 @@ body{
 	
 }
 
-.logo .block-logo img{
+.logo img{
 
 	height: 60px;
     width: 60px;
@@ -33,10 +33,7 @@ body{
     border-radius: 100%;
 }
 
-.block-logo{
 
-	z-index: 10;
-}
 
 .heading{
 
@@ -46,13 +43,15 @@ body{
 	background-color: #25272c;
 }
 
-.heading .block-heading h1{
+.heading  h1 a{
 
 	text-align: center;
-	padding: 20px 70px;
+    padding: 20px 70px;
+    font-size: 30px;
+    color: white;
 }
 
-.heading .block-heading h1 a:hover{
+.heading  h1 a:hover{
 
 	text-decoration: none;
 }
