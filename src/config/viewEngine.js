@@ -16,14 +16,14 @@ let configViewEngine = (app,SESSION_SECRET,SESSION_ALGORITHM) =>{
         saveUninitialized: true
       }));
     app.use(flash());
-    app.use(express.static("./public"));
+    app.use(express.static("./src/public"));
     app.use(bodyParser.json());
     app.use(express.urlencoded({extended: true})); 
     app.use(express.json());    
     app.engine('cl7', handlebars.engine({extname : '.cl7',}));
     app.set('view engine','cl7');
-    app.use(express.static("./views"));
-    app.set("views", "./views");
+    app.use(express.static("./src/views"));
+    app.set("views", "./src/views");
 }
 
 module.exports = {
