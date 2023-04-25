@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
@@ -16,7 +15,7 @@ const port = process.env.PORT || 3000;
 const SESSION_SECRET = process.env.SESSION_SECRET;
 const SESSION_ALGORITHM = process.env.SESSION_ALGORITHM;
 //config : cấu hình
-viewEngine.decorateWebsite(app, path, SESSION_SECRET, SESSION_ALGORITHM); 
+viewEngine.decorateWebsite(app, SESSION_SECRET, SESSION_ALGORITHM); 
 //router : tuyến đường
 router.routeInit(app);
 //connect to client (ket noi voi client)
