@@ -1,7 +1,9 @@
 <div class="title-home">
-	<h1>  
-		Home page
-	</h1>
+	<marquee width="100%" direction="right">
+		<h1>  
+			Hãy Nhập tên trước khi vào room
+		</h1>
+	</marquee>
 </div>
 <div class="join-container">
 	<header class="join-header">
