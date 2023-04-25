@@ -1,0 +1,35 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuongclearlove7/Web-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuongclearlove7/Web-chat/issues"
+  },
+  "homepage": "https://github.com/tuongclearlove7/Web-chat#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-flash": "github:RGBboy/express-flash",
+    "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
+    "moment": "^2.29.4",
+    "mongoose": "^7.0.5",
+    "request": "^2.88.2",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22"
+  }
+}
