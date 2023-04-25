@@ -1,11 +1,8 @@
 const express = require('express');
 const session = require('express-session');
 const flash = require('express-flash');
-//const path = require('path');
-const handlebars = require('express-handlebars');
-const bodyParser = require('body-parser');
 //config : cấu hình
-let configViewEngine = (app,SESSION_SECRET,SESSION_ALGORITHM) =>{
+let configViewEngine = (app, bodyParser, handlebars, SESSION_SECRET, SESSION_ALGORITHM) =>{
 
     // app.use(express.static(path.join(__dirname, "../public")));
     // app.set('views', path.join(__dirname, "../views"));
