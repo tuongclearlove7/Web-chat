@@ -13,9 +13,11 @@ class homeController {
     // kết xuất trang home và các trang khác ...
     index = async (req, res, next)=>{
         
-    
         renderView.render_database(User_db ,req, res , next, 'index.cl7');
-        
+    }
+    postHome = async (req, res, next)=>{
+    
+      
     }
     shop = async (req,res, next)=>{
        //render step 
@@ -93,6 +95,7 @@ class homeController {
        // account.save();
         Account.findOne({username :  input_user.username})
                 .then(user => { 
+                   
                     //kiểm tra login 
                     //check login
                     //condition này chỉ kiểm tra 
@@ -136,6 +139,10 @@ class homeController {
         var user = {username : this.username};
         Account.findOne({})
             .then(myuser => { 
+                req.session.user = {
+                    username : myuser.username,
+                }
+                console.log(req.session);
                 res.render('show/account.cl7', {
                     user
                 });

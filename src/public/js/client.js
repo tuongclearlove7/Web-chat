@@ -25,7 +25,6 @@ socket.on('message', message => {
     
     console.log(message);  
     asyncCallMsg(message, message.automatic);
-
     render_object('.count-users',`${message.countUsers}`);
     chatMessages.scrollTop = chatMessages.scrollHeight;
 });

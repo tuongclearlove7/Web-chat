@@ -5,7 +5,7 @@ function connectToClient(io){
     //connect web server
     // ket noi vao web server
     io.on('connection', (socket) => {
-         console.log(socket.id + " websocket connection website..."); 
+         console.log(socket.id + " websocket connection..."); 
         //user disconnect server
         socket.on('disconnect', () => {
             console.log(`${socket.id} disconnect to server`);
