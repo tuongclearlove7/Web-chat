@@ -1,6 +1,6 @@
 const express = require('express');
 const {homePage} = require('../controller/homeController');
-const {middleware} = require('../controller/middlewareController');
+const {middleware} = require('../middleware/middleware');
 let router = express.Router();
 //route path home page : tuyến đường trang home và các trang khác cùng tuyến đường với home
 router.get('/shop',homePage.shop);

@@ -7,7 +7,7 @@ phần mềm trung gian được sử dụng để xử lý các
 yêu cầu và phản hồi giữa các thành 
 phần trong một ứng dụng web hoặc framework.
 **/
-class middlewareController {
+class middleware {
    
     middleware1 = async (req, res, next)=>{
         if(['tuong', 'thao'].includes(req.query.user)){
@@ -32,13 +32,8 @@ class middlewareController {
         res.status(404).json({message:'Unable to access!'});
     }
 
-  
-    show = async (req,res, next)=>{
-
-      
-    }
 }
 
 module.exports = {
-    middleware : new middlewareController,
+    middleware : new middleware,
 }
