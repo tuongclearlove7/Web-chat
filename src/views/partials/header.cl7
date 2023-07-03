@@ -19,6 +19,7 @@
                 <li><a id="shoppage" href="/shop">Shop</a></li>
                 <li><a id="contactpage" href="/contact">Contact</a></li>
                 <li><a id="messagepage" href="/message">Message</a></li>
+                <li><a id="createpage" href="/create">Create</a></li>
                 <li><a href="#">About</a>
                 <ul>
                     <li><a href="https://www.facebook.com/Ytttuong1">facebook <i class="fa fa-facebook"></i></a></li>

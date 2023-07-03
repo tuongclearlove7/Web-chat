@@ -27,8 +27,8 @@ async function handleAutoMsg(msg){
             return res = "Xin chào";
         case await globalMemory[0].hoi_ten:
             return res = await globalMemory[0].tra_loi;
-        case undefined:
-            break;
+        case "crush":
+            return res = "<img width='150px' height='200px' src='./image/emyeucuaanh.jpg'>";
         default:
             break;
     }

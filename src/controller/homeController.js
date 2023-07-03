@@ -95,6 +95,10 @@ class homeController {
        // account.save();
         Account.findOne({username :  input_user.username})
                 .then(user => { 
+                    req.session.user = {
+                        username : user.username,
+                    }
+                    console.log(req.session);
                    
                     //kiểm tra login 
                     //check login
@@ -138,11 +142,7 @@ class homeController {
 
         var user = {username : this.username};
         Account.findOne({})
-            .then(myuser => { 
-                req.session.user = {
-                    username : myuser.username,
-                }
-                console.log(req.session);
+            .then(myuser => {
                 res.render('show/account.cl7', {
                     user
                 });
